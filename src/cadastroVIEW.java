@@ -198,6 +198,8 @@ public class cadastroVIEW extends javax.swing.JPanel {
  
         nome.setText("");
         valor.setText("");
+        
+        System.out.println("cadastro realizado com sucesso");
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
