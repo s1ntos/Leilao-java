@@ -1,3 +1,7 @@
+
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
@@ -184,7 +188,13 @@ public class listagemVIEW extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVenderActionPerformed
-       
+       DefaultTableModel tableModel = (DefaultTableModel) listaProdutos1.getModel();
+        int selectRow = listaProdutos1.getSelectedRow();
+        if(selectRow != -1){
+            tableModel.removeRow(selectRow);
+        }else{
+            JOptionPane.showMessageDialog(null, "Slecione uma linha para excluir!");
+        } 
     }//GEN-LAST:event_btnVenderActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
