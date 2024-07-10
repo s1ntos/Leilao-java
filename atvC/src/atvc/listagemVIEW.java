@@ -33,8 +33,8 @@ public class listagemVIEW extends javax.swing.JFrame {
     }
     
     public listagemVIEW() {
-        initComponents();
-        listarProdutos();
+      initComponents();
+      listarProdutos();
         
     }
 
@@ -76,20 +76,10 @@ public class listagemVIEW extends javax.swing.JFrame {
         jLabel2.setText("Vender Produto(ID)");
 
         jButton1.setText("Vender");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         jButton2.setText("Voltar");
 
         jButton3.setText("Consultar Vendas");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,18 +137,6 @@ public class listagemVIEW extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int id = Integer.parseInt(jTextField1.getText());
-    ProdutosDAO produtosdao = new ProdutosDAO();
-    produtosdao.venderProduto(id);
-    listarProdutos(); // Atualiza a lista de produtos na tela
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        new cadastroVIEW().setVisible(true);
-    this.dispose(); // Fecha a tela atual
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

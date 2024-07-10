@@ -139,13 +139,18 @@ public class cadastroVIEW extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ProdutosDTO produto = new ProdutosDTO();
+         ProdutosDTO produto = new ProdutosDTO();
     produto.setNome(nome.getText());
     produto.setValor(Integer.parseInt(valor.getText()));
     produto.setStatus("A Venda");
     
     ProdutosDAO produtodao = new ProdutosDAO();
-    produtodao.inserir(produto);
+    produtodao.cadastrarProduto(produto);
+    
+    // Limpar os campos após cadastrar
+    nome.setText("");
+    valor.setText("");
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

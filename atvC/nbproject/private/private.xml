@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/joaop/OneDrive/Documentos/NetBeansProjects/atvC/src/atvc/vendas.java</file>
+            <file>file:/C:/Users/joaop/OneDrive/Documentos/NetBeansProjects/atvC/src/atvc/conectaDAO.java</file>
+            <file>file:/C:/Users/joaop/OneDrive/Documentos/NetBeansProjects/atvC/src/atvc/listagemVIEW.java</file>
+            <file>file:/C:/Users/joaop/OneDrive/Documentos/NetBeansProjects/atvC/src/atvc/beans/ProdutosDTO.java</file>
+            <file>file:/C:/Users/joaop/OneDrive/Documentos/NetBeansProjects/atvC/src/atvc/cadastroVIEW.java</file>
+            <file>file:/C:/Users/joaop/OneDrive/Documentos/NetBeansProjects/atvC/src/atvc/ProdutosDAO.java</file>
         </group>
     </open-files>
 </project-private>

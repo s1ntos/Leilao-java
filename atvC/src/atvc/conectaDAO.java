@@ -1,3 +1,4 @@
+package atvc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +11,7 @@ public class conectaDAO {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost/uc11", // linha de conexao
+                "jdbc:mysql://localhost/atvrec", // linha de conexao
                 "root", // usuario do mysql
                 "joaocosta34" // senha do mysql
             );
@@ -29,5 +30,3 @@ public class conectaDAO {
         }
     }
 }
-
-
